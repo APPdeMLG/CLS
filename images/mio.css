@@ -1,13 +1,13 @@
 .datagrid table { border-collapse: collapse; text-align: left; width: 100%; } 
 .datagrid {font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #4B4B4B; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
 .datagrid table td, 
-.datagrid table th { padding: 3px 10px; }
+.datagrid table th { padding: 3px 4px; }
 .datagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dcaa2b), color-stop(1, #dcaa2b) );
 	background:-moz-linear-gradient( center top, #dcaa2b 5%, #dcaa2b 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4B4B4B', endColorstr='#4B4B4B');
 	background-color:#4B4B4B; 
 	color:#FFFFFF; 
-	font-size: 13px; 
+	font-size: 14px; 
 	font-weight: bold; 
 	border-left: 1px solid #dcaa2b; } datagrid table thead th:first-child { border: none; }
 .datagrid table tbody td { color: #4B4B4B; border-left: 1px solid #cec8b3;font-size: 12px;font-weight: bold; }
