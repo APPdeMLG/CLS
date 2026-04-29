@@ -150,17 +150,15 @@
 
 <p></p>
 
-<div id="contenedor"></div>
+<div id="contenedor-header"></div>
 
 <script>
-fetch('test.html')
-	.then(response => response.arrayBuffer()) // Recibimos los datos binarios
-	.then(buffer => {
-	const decoder = new TextDecoder('utf-8'); // Forzamos decodificación UTF-8
-	const text = decoder.decode(buffer);
-	document.getElementById('contenedor').innerHTML = text;
-	})
-	.catch(error => console.error('Error:', error));
+  fetch('test.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('contenedor-header').innerHTML = data;
+    })
+    .catch(error => console.error('Error al cargar el archivo:', error));
 </script>
 
 <!-- CLASIFICACION -->
