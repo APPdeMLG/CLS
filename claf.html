@@ -150,6 +150,17 @@
 
 <p></p>
 
+<div id="contenedor-header"></div>
+
+<script>
+  fetch('index.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('contenedor-header').innerHTML = data;
+    })
+    .catch(error => console.error('Error al cargar el archivo:', error));
+</script>
+
 <!-- CLASIFICACION -->
 <div class="datagrid"><table>
 <thead>
